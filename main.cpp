@@ -83,9 +83,9 @@ void printTable(HANDLE h, int maxNum, int table[6][6])
         for (int j = 0; j < maxNum; j++)
             {
                 int temp = numberOfDigits(table[i][j]);
-                if (temp < maxNum)
+                if (temp < 4)
                 {
-                    while (temp < maxNum)
+                    while (temp < 4)
                     {
                         std::cout << " ";
                         temp++;
